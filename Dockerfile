@@ -1,6 +1,6 @@
 # NemoClaw sandbox image — OpenClaw + NemoClaw plugin inside OpenShell
 
-FROM node:22-slim
+FROM node:25-slim
 ARG PYYAML_VERSION=6.0.3
 
 ENV DEBIAN_FRONTEND=noninteractive
