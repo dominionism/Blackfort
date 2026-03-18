@@ -1,0 +1,42 @@
+name: Feature request
+description: Propose a narrowly defined improvement to the template or workflow.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What concrete limitation are you trying to remove?
+      placeholder: I need a safer way to rotate GitHub worker credentials without editing local files.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the expected behavior directly.
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security impact
+      description: State whether this changes trust boundaries, egress, secret handling, auth, unattended execution, or public exposure.
+      placeholder: This should not widen network access or relax sandboxing.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: This request does not require posting secrets, tokens, or private infrastructure details.
+          required: true
+        - label: I checked that the requested change is not already covered in the docs or templates.
+          required: true

@@ -1,0 +1,79 @@
+name: Bug report
+description: Report a reproducible defect in the template or runtime workflow.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not use this form for vulnerabilities or secret exposure.
+        Follow the repository security policy instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: State the problem directly.
+      placeholder: The GitHub worker fails to restore local-only egress after a PR task.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include the smallest reproducible sequence.
+      placeholder: |
+        1. Run ...
+        2. Enable ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Blackfort version or commit
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      options:
+        - Host CLI
+        - OpenShell sandbox/runtime
+        - OpenClaw plugin
+        - Heartbeat worker
+        - GitHub worker flow
+        - Docs or templates
+        - Install or upgrade path
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or output
+      description: Remove secrets, tokens, private URLs, and local paths before submitting.
+      render: shell
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I removed secrets, tokens, local paths, and machine-specific identifiers.
+          required: true
+        - label: I checked the existing docs and release checklist before opening this issue.
+          required: true

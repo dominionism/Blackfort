@@ -75,5 +75,6 @@ Leave `"enabled": false` in `HEARTBEAT.md` until the task definition is correct 
 Before making the repo public:
 
 - read `PUBLISHING.md`
+- apply the hosted repository settings in `GITHUB_REPO_SETUP.md`
 - confirm there are no secrets or local paths
 - confirm docs and metadata point at your own repository, not this skeleton or upstream defaults

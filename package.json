@@ -1,7 +1,15 @@
 {
   "name": "nemoclaw",
   "version": "0.1.0",
-  "description": "NemoClaw — run OpenClaw inside OpenShell with NVIDIA inference",
+  "description": "Hardened NemoClaw template for running OpenClaw inside OpenShell with scoped GitHub automation",
+  "keywords": [
+    "openclaw",
+    "openshell",
+    "sandbox",
+    "automation",
+    "security-hardening",
+    "template"
+  ],
   "license": "Apache-2.0",
   "bin": {
     "nemoclaw": "./bin/nemoclaw.js"

@@ -144,6 +144,7 @@ $ npm test
 
 - [TEMPLATE_SETUP.md](TEMPLATE_SETUP.md)
 - [PUBLISHING.md](PUBLISHING.md)
+- [GITHUB_REPO_SETUP.md](GITHUB_REPO_SETUP.md)
 - [PUBLIC_RELEASE_CHECKLIST.md](PUBLIC_RELEASE_CHECKLIST.md)
 - [HEARTBEAT.md](HEARTBEAT.md)
 - [docs/reference/commands.md](docs/reference/commands.md)

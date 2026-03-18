@@ -50,5 +50,6 @@ All of those should return no sensitive hits before the first push.
 
 - Replace upstream-facing branding or repository URLs if you want your own project identity.
 - Review `package.json`, docs metadata, and README links if you want them to point at your new repository.
+- Apply the hosted repository settings in `GITHUB_REPO_SETUP.md`.
 - Keep `.env.example` as placeholders only.
 - Do not commit real `.env` files, secrets, audit logs, or local state.
